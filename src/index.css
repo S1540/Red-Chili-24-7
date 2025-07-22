@@ -1,0 +1,8 @@
+body {
+  background-image: url("./assets/burger-black.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: #360a0d;
+}
