@@ -5,7 +5,7 @@ import { HiBarsArrowDown } from "react-icons/hi2";
 const Header = () => {
   return (
     <>
-      <header className="max-w-full w-full h-auto bg-black/30 backdrop-blur-sm flex justify-between md:justify-around items-center">
+      <header className="max-w-full w-full h-auto bg-black/30 backdrop-blur-sm flex justify-between md:justify-around items-center fixed top-0 left-0 right-0 z-50">
         <div className="max-w-32 shrink-0 h-full">
           <img
             src={logo}
