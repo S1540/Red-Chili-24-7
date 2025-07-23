@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Faster+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merienda:wght@300..900&family=Orbitron:wght@400..900&family=Rye&display=swap");
+
 body {
   background-image: url("./assets/burger-black.png");
   background-size: cover;
@@ -5,4 +7,19 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   background-color: #360a0d;
+}
+
+.chooseUs {
+  font-family: "Bungee Tint";
+}
+.booking {
+  font-family: "Rye";
+}
+.inter {
+  font-family: "Inter";
+}
+
+.shadow-left-right {
+  box-shadow: 8px 0 16px -4px rgba(0, 0, 0, 0.2),
+    -8px 0 16px -4px rgba(0, 0, 0, 0.2);
 }
