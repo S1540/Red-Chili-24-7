@@ -24,7 +24,7 @@ const SpacialItemCard = ({ image, itemName }) => {
           laboriosam adipisci esse amet harum?
         </p>
         <div className="w-full flex justify-around items-center">
-          <div className="bg-black/10 flex items-center gap-2 px-2 py-1 rounded-md ">
+          <div className="bg-black/10 flex items-center gap-2 px-2 py-1 rounded-md itemIncress ">
             <RiSubtractFill
               className="text-3xl text-red-500"
               onClick={() => setCount(count - 1)}
@@ -35,9 +35,9 @@ const SpacialItemCard = ({ image, itemName }) => {
               onClick={() => setCount(count + 1)}
             />
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center pt-2 gap-6 itemIncress">
             <p className="text-xl font-semibold py-2">Rs. {count * 10}</p>
-            <BsFillCartPlusFill className="text-3xl text-blue-500 border rounded-sm p-1 h-10 w-10 hover:bg-orange-500 hover:text-black transition-all duration-300 ease-in" />
+            <BsFillCartPlusFill className="text-3xl text-blue-500 hover:border rounded-sm p-1 h-10 w-10 hover:bg-orange-400 hover:text-black transition-all duration-300 ease-in" />
           </div>
         </div>
       </div>
