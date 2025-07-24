@@ -9,7 +9,7 @@ const SpacialItemCard = ({ image, itemName }) => {
   return (
     <>
       <div
-        className=" max-w-xs  flex flex-col justify-center items-center text-center leading-relaxed 
+        className=" max-w-xs bg-white/80 flex flex-col justify-center items-center text-center leading-relaxed 
       shadow-left-right rounded-xl pb-3 overflow-hidden"
       >
         <img

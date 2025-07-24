@@ -29,8 +29,8 @@ const SpacialItemData = [
 const SpacialItems = () => {
   return (
     <>
-      <div className=" bg-white flex justify-between  max-w-full w-full items-center  ">
-        <h1 className=" bg-white/90 text-3xl md:text-5xl font-semibold px-6 py-7 md:py-12 chooseUs">
+      <div className=" bg-zinc-200 flex justify-between  max-w-full w-full items-center  ">
+        <h1 className=" bg-whit text-3xl md:text-5xl font-semibold px-6 py-7 md:py-12 chooseUs">
           <p className="text-sm font-thin text-orange-600">- Tasty & Fresh</p>
           Our <span className="text-orange-600">Spacial items </span>🤷‍♂️
         </h1>
@@ -56,7 +56,7 @@ const SpacialItems = () => {
           </svg>
         </button> */}
       </div>
-      <div className=" bg-white flex gap-4 justify-around flex-wrap">
+      <div className=" bg-zinc-200 flex gap-4 justify-around flex-wrap">
         {SpacialItemData.map((data, index) => (
           <SpacialItemCard
             key={index}

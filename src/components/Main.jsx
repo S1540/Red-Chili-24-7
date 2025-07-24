@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <>
       <main className="max-w-full min-h-screen">
-        <div className="relative h-screen px-5 py-5 md:px-20 md:py-10">
+        <div className="relative h-svh px-5 py-5 md:px-20 md:py-10">
           <div className="absolute top-32 left-0 right-0 px-5 md:left-20 md:right-20 max-w-md h-full leading-relaxed text-white space-y-4 transition-all duration-500 ease-in-out">
             <p className="text-4xl md:text-5xl font-semibold leading-14">
               <span className="text-green-600">Welcome</span> To{" "}
