@@ -24,5 +24,23 @@ body {
     -8px 0 16px -4px rgba(0, 0, 0, 0.2);
 }
 .itemIncress {
-  font-family: "Cinzel";
+  font-family: "Faster";
+}
+/* level css */
+/* Inside your global CSS */
+input[type="range"].slider-thumb-orange::-webkit-slider-thumb {
+  appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 9999px;
+  background-color: #f97316; /* Tailwind orange-500 */
+  cursor: pointer;
+  border: 2px solid white;
+  margin-top: -8px;
+}
+
+input[type="range"].slider-thumb-orange {
+  height: 6px;
+  background-color: #fde68a; /* light bg like yellow-200 */
+  border-radius: 9999px;
 }
