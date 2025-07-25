@@ -1,16 +1,10 @@
 import { useState } from "react";
 import chili1 from "../assets/chili-1.png";
 import chili2 from "../assets/chili-2.png";
-import veg1 from "../assets/veg-1.png";
-import veg2 from "../assets/veg-2.png";
-import veg3 from "../assets/veg-3.png";
-import veg4 from "../assets/veg-4.png";
-import veg5 from "../assets/veg-5.png";
-import veg6 from "../assets/veg-6.png";
+import CookItemOwn from "./CookItemOwn";
 
 const CookLevelSlider = () => {
-  const [cookLevel, setCookLevel] = useState(1); // 0 = Rare, 1 = Medium, 2 = Full Baked
-
+  const [cookLevel, setCookLevel] = useState(1);
   const labels = ["Rare", "Medium", "Full Baked"];
 
   return (
@@ -59,22 +53,7 @@ const CookLevelSlider = () => {
       </div>
 
       {/* Customize food */}
-
-      <div className="max-w-xl w-full">
-        <h1 className="font-[Inter] font-medium">Veg Item</h1>
-        <div className="flex justify-around items-center flex-wrap gap-4">
-          {[veg1, veg2, veg3, veg4, veg5, veg6].map((img, index) => {
-            return (
-              <img
-                key={index}
-                src={img}
-                alt=""
-                className="w-20 h-20 shadow-lg shadow-neutral-400 rounded-sm"
-              />
-            );
-          })}
-        </div>
-      </div>
+      <CookItemOwn />
     </>
   );
 };
