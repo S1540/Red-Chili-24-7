@@ -75,13 +75,17 @@ const Main = () => {
         </div>
 
         <SpacialItem />
-        <div className="flex max-w-full justify-around bg-zinc-200 flex-wrap items-center px-5">
-          <div>
-            <MakeOwnTest />
+        <div className="flex max-w-full justify-between bg-zinc-200 flex-wrap items-center px-10">
+          <div className="max-w-xl w-full">
+            <MakeOwnTest name="Burger" />
             <CookLevelSlider />
             <CookItemOwn />
           </div>
-          <CustomBurgerImage />
+          <div className="max-w-xl w-full">
+            <MakeOwnTest name="Pizza" />
+            <CookLevelSlider />
+            <CookItemOwn />
+          </div>
         </div>
       </main>
     </>
