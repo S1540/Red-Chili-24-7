@@ -27,7 +27,9 @@ const SpacialItemCard = ({ image, itemName }) => {
           <div className="bg-black/10 flex items-center gap-2 px-2 py-1 rounded-md itemIncress ">
             <RiSubtractFill
               className="text-3xl text-red-500"
-              onClick={() => setCount(count - 1)}
+              onClick={() => {
+                if (count > 0) setCount(count - 1);
+              }}
             />
             <p className=" text-xl ">{count}</p>
             <IoAddSharp

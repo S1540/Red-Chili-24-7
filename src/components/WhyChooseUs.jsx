@@ -4,7 +4,6 @@ import item2 from "../assets/item-2.png";
 import item3 from "../assets/item-3.png";
 import item8 from "../assets/item-9.jpg";
 import SpacialItemCard from "./SpacialItemCard";
-import MakeOwnTest from "./MakeOwnTest";
 
 const SpacialItemData = [
   {
@@ -65,8 +64,6 @@ const SpacialItems = () => {
           />
         ))}
       </div>
-
-      <MakeOwnTest />
     </>
   );
 };

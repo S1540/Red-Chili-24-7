@@ -9,7 +9,7 @@ const CookLevelSlider = () => {
 
   return (
     <>
-      <div className="w-full max-w-xl">
+      <div className="w-full max-w-xl bg-zinc-200">
         <h1 className="text-xl font-semibold font-[Inter] pb-2">
           How Spicy for You
         </h1>
@@ -51,9 +51,6 @@ const CookLevelSlider = () => {
           </div>
         </div>
       </div>
-
-      {/* Customize food */}
-      <CookItemOwn />
     </>
   );
 };

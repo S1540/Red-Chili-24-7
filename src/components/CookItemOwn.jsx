@@ -37,9 +37,9 @@ const CookItemOwn = () => {
   };
   return (
     <>
-      <div className="max-w-xl w-full">
+      <div className="max-w-xl w-full bg-zinc-200 ">
         <h1 className="font-sans font-bold pb-2">Veg Item</h1>
-        <div className="flex justify-around items-center flex-wrap gap-4">
+        <div className="flex items-center flex-wrap  gap-2">
           {images.map((img, index) => {
             return (
               <img
@@ -56,27 +56,26 @@ const CookItemOwn = () => {
             );
           })}
         </div>
-      </div>
 
-      {/* Souce */}
-      <div className="max-w-xl w-full py-5">
-        <h1 className="font-sans font-bold pb-2">Souce</h1>
-        <div className="flex justify-around items-center flex-wrap gap-4">
-          {souces.map((img, index) => {
-            return (
-              <img
-                key={index}
-                src={img}
-                alt=""
-                onClick={() => toggleSelectSouce(index)}
-                className={`w-20 h-20 shadow-lg shadow-neutral-400 transition-all duration-300 ease-in-out rounded-sm ${
-                  selectedSouce.includes(index)
-                    ? "ring-1 ring-orange-500 scale-105  "
-                    : ""
-                }`}
-              />
-            );
-          })}
+        <div className="max-w-xl w-full py-5 bg-zinc-200">
+          <h1 className="font-sans font-bold pb-2">Souce</h1>
+          <div className="flex items-center flex-wrap gap-2">
+            {souces.map((img, index) => {
+              return (
+                <img
+                  key={index}
+                  src={img}
+                  alt=""
+                  onClick={() => toggleSelectSouce(index)}
+                  className={`w-20 h-20 shadow-lg shadow-neutral-400 transition-all duration-300 ease-in-out rounded-sm ${
+                    selectedSouce.includes(index)
+                      ? "ring-1 ring-orange-500 scale-105  "
+                      : ""
+                  }`}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </>
