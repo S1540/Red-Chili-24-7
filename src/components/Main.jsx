@@ -2,18 +2,20 @@ import React from "react";
 import GooglePlay from "../assets/GooglePlay.png";
 import AppStore from "../assets/AppStore.png";
 import { FaAnglesDown } from "react-icons/fa6";
-import SpacialItem from "./WhyChooseUs";
+import SpacialItems from "./WhyChooseUs";
+// import SpacialItem from "./WhyChooseUs";
 import CookItemOwn from "./CookItemOwn";
 import MakeOwnTest from "./MakeOwnTest";
 import CookLevelSlider from "./CookLevelSlider";
 import CustomBurgerImage from "./CustomBurgerImage";
+import Cafe from "./Cafe";
 
 const Main = () => {
   return (
     <>
-      <main className="max-w-full w-full min-h-screen">
+      <main className=" relative max-w-full w-full min-h-screen">
         <div className="relative h-svh px-5 py-5 md:px-20 md:py-10">
-          <div className="absolute top-32 left-0 right-0 px-5 md:left-20 md:right-20 max-w-md h-full leading-relaxed text-white space-y-4 transition-all duration-500 ease-in-out">
+          <div className="fixed top-32 left-0 right-0 z-10 px-5 md:left-20 md:right-20 max-w-md h-full leading-relaxed text-white space-y-4 transition-all duration-500 ease-in-out">
             <p className="text-4xl md:text-5xl font-semibold leading-14">
               <span className="text-green-600">Welcome</span> To{" "}
               <span className="text-red-500 ">Red Chili</span> - Your Perfect
@@ -73,19 +75,23 @@ const Main = () => {
             </div>
           </div>
         </div>
+        <div className="relative z-20">
+          <SpacialItems />
+        </div>
 
-        <SpacialItem />
-        <div className="flex max-w-full justify-between bg-zinc-200 flex-wrap items-center px-10">
+        <div className=" relative z-20 flex flex-col md:flex-row max-w-full justify-between bg-zinc-200 px-10">
           <div className="max-w-xl w-full">
             <MakeOwnTest name="Burger" />
             <CookLevelSlider />
             <CookItemOwn />
           </div>
-          <div className="max-w-xl w-full">
-            <MakeOwnTest name="Pizza" />
-            <CookLevelSlider />
-            <CookItemOwn />
+          <div className="max-w-3xl w-full hidden lg:block">
+            <CustomBurgerImage />
           </div>
+        </div>
+
+        <div className="relative z-20">
+          <Cafe />
         </div>
       </main>
     </>

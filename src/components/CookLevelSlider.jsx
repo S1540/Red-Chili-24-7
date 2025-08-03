@@ -1,7 +1,6 @@
 import { useState } from "react";
 import chili1 from "../assets/chili-1.png";
 import chili2 from "../assets/chili-2.png";
-import CookItemOwn from "./CookItemOwn";
 
 const CookLevelSlider = () => {
   const [cookLevel, setCookLevel] = useState(1);

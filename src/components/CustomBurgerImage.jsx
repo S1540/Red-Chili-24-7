@@ -1,11 +1,12 @@
 import React from "react";
-import burger from "../assets/burger.png";
+// import burger from "../assets/burger.png";
+import girlPic from "../assets/girl-bg.png";
 
 const CustomBurgerImage = () => {
   return (
     <>
-      <div className=" bg-gray-100 max-w-xl shadow-xl shadow-neutral-400 lg:mt-32 px-2 rounded-xl ">
-        <img src={burger} className=" w-full h-[460px] object-contain" />
+      <div className=" max-w-3xl px-2 rounded-xl bg-center bg-cover shrink-0 md:h-[500px] lg:h-[600px] bg-no-repeat">
+        <img src={girlPic} className=" w-full h-full  object-center" />
       </div>
     </>
   );

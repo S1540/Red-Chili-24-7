@@ -1,5 +1,4 @@
 import React from "react";
-import CookLevelSlider from "./CookLevelSlider";
 
 const MakeOwnTest = ({ name }) => {
   return (

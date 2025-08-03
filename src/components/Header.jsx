@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <>
-      <header className=" max-w-full w-full h-auto bg-black/30 backdrop-blur-sm flex justify-between md:justify-around items-center fixed top-0 left-0 right-0 z-50">
+      <header className=" max-w-full w-full h-auto bg-black/30 backdrop-blur-sm flex justify-between md:justify-around items-center border-b border-amber-300 border-dotted fixed top-0 left-0 right-0 z-50">
         <div className="max-w-32 shrink-0 h-full">
           <img
             src={logo}
@@ -17,42 +17,21 @@ const Header = () => {
           />
         </div>
         <nav className="max-w-2xl w-full hidden md:flex justify-around items-center text-white">
-          <a
-            href=""
-            className="font-semibold px-2 hover:text-orange-500 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
-          >
-            Home
-          </a>
-          <a
-            href=""
-            className="font-semibold px-2 hover:text-orange-500 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
-          >
-            Menu
-          </a>
-          <a
-            href=""
-            className="font-semibold px-2 hover:text-orange-500 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
-          >
-            Orders
-          </a>
-          <a
-            href=""
-            className="font-semibold px-2 hover:text-orange-500 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
-          >
-            Grab Your Seat{" "}
-          </a>
-          <a
-            href=""
-            className="font-semibold px-2 hover:text-orange-500 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
-          >
-            Account
-          </a>
-          <a
-            href=""
-            className="font-semibold px-2 hover:text-orange-500 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
-          >
-            Service
-          </a>
+          {[
+            "Home",
+            "Menu",
+            "Orders",
+            "Grab Your Seat",
+            "Account",
+            "Service",
+          ].map((item) => (
+            <a
+              href=""
+              className="font-semibold px-2 hover:text-orange-500 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+            >
+              {item}
+            </a>
+          ))}{" "}
         </nav>
 
         <div className="max-w-52 w-full hidden md:block space-x-3">
