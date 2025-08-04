@@ -38,7 +38,7 @@ const SpacialItemCard = ({ image, itemName }) => {
             />
           </div>
           <div className="flex items-center pt-2 gap-6 itemIncress">
-            <p className="text-xl font-semibold py-2">Rs. {count * 10}</p>
+            <p className="text-xl font-semibold py-2">Rs. {count * 70}</p>
             <BsFillCartPlusFill className="text-3xl text-blue-500 hover:border rounded-sm p-1 h-10 w-10 hover:bg-orange-400 hover:text-black transition-all duration-300 ease-in" />
           </div>
         </div>

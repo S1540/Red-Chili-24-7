@@ -1,37 +1,49 @@
 import React from "react";
 import Resaturent from "../assets/Restaurent.jpg";
 import SpacialItemCard from "./SpacialItemCard";
-// import item1 from "../assets/cafe-1.png";
-// import item2 from "../assets/cafe-2.png";
-// import item3 from "../assets/cafe-3.jpg";
-// import item8 from "../assets/cafe-4.png";
+import CafeCard from "./CafeCard";
+import item1 from "../assets/cafe-1.png";
+import item2 from "../assets/cafe-2.png";
+import item3 from "../assets/cafe-3.jpg";
+import item4 from "../assets/cafe-4.png";
 
-// const SpacialItemData = [
-//   {
-//     image: item1,
-//     itemName: "Sizzle Snap Burgers",
-//   },
-//   {
-//     image: item2,
-//     itemName: "Italian Spicy Burgers",
-//   },
-//   {
-//     image: item3,
-//     itemName: "Snacks Meat Burgers",
-//   },
+const SpacialItemData = [
+  {
+    image: item1,
+    itemName: "Monaco Biriyani",
+  },
+  {
+    image: item2,
+    itemName: "Handi Chicken",
+  },
+  {
+    image: item3,
+    itemName: "Chicken Rolls Fries",
+  },
 
-//   {
-//     image: item8,
-//     itemName: "Crunchy Snap Hot-Dog",
-//   },
-// ];
+  {
+    image: item4,
+    itemName: "Chaumin Chicken ",
+  },
+];
 
 const Cafe = () => {
   return (
     <>
-      <div>
-        <img src={Resaturent} alt="" className="bg-fixed" />
-        <SpacialItemCard />
+      <div className="relative w-full h-full bg-gray-100">
+        <img src={Resaturent} alt="" className="bg-fixed w-full h-64" />
+        <h1 className=" bg-whit text-3xl md:text-5xl font-semibold px-6 py-7 md:py-12 chooseUs">
+          <p className="text-sm font-thin text-orange-600">
+            - Sponsored by Zomato
+          </p>
+          Cafe & Resaturent{" "}
+          <span className="text-orange-600"> 12:00 PM Spacial Offer </span>🤷‍♂️
+        </h1>
+        <div className=" flex justify-around flex-wrap gap-4">
+          {SpacialItemData.map((data, index) => (
+            <CafeCard key={index} image={data.image} title={data.itemName} />
+          ))}
+        </div>
       </div>
     </>
   );
