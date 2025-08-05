@@ -1,5 +1,5 @@
 import React from "react";
-import Resaturent from "../assets/Restaurent.jpg";
+import Resaturent from "../assets/banner-cafe.png";
 import SpacialItemCard from "./SpacialItemCard";
 import CafeCard from "./CafeCard";
 import item1 from "../assets/cafe-1.png";
@@ -31,7 +31,7 @@ const Cafe = () => {
   return (
     <>
       <div className="relative w-full h-full bg-zinc-200 py-5">
-        <img src={Resaturent} alt="" className="bg-fixed w-full " />
+        <img src={Resaturent} alt="" className="bg-fixed w-full max-h-30" />
         <h1 className=" bg-whit text-3xl md:text-5xl font-semibold px-6 py-7 md:py-12 chooseUs">
           <p className="text-sm font-thin text-orange-600">
             - Sponsored by Zomato
