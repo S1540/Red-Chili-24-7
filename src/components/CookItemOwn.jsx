@@ -57,7 +57,7 @@ const CookItemOwn = () => {
           })}
         </div>
 
-        <div className="max-w-xl w-full py-5 bg-zinc-200">
+        <div className="max-w-xl w-full py-3 bg-zinc-200">
           <h1 className="font-sans font-bold pb-2">Souce</h1>
           <div className="flex items-center flex-wrap gap-2">
             {souces.map((img, index) => {
