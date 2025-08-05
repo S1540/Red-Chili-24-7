@@ -30,8 +30,8 @@ const SpacialItemData = [
 const Cafe = () => {
   return (
     <>
-      <div className="relative w-full h-full bg-gray-100">
-        <img src={Resaturent} alt="" className="bg-fixed w-full h-64" />
+      <div className="relative w-full h-full bg-zinc-200 py-5">
+        <img src={Resaturent} alt="" className="bg-fixed w-full " />
         <h1 className=" bg-whit text-3xl md:text-5xl font-semibold px-6 py-7 md:py-12 chooseUs">
           <p className="text-sm font-thin text-orange-600">
             - Sponsored by Zomato
@@ -44,6 +44,10 @@ const Cafe = () => {
             <CafeCard key={index} image={data.image} title={data.itemName} />
           ))}
         </div>
+
+        <button className="bg-black h-17 w-44 text-white rounded-full font-semibold hover:bg-gray-800 transition duration-300 ease-in-out flex items-center justify-center mx-auto mt-10 mb-5">
+          View More
+        </button>
       </div>
     </>
   );

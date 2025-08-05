@@ -28,13 +28,14 @@ const SpacialItemData = [
 const SpacialItems = () => {
   return (
     <>
-      <div className=" bg-zinc-200 flex justify-between  max-w-full w-full items-center ">
-        <h1 className=" bg-whit text-3xl md:text-5xl font-semibold px-6 py-7 md:py-12 chooseUs">
-          <p className="text-sm font-thin text-orange-600">- Tasty & Fresh</p>
-          Our <span className="text-orange-600">Spacial items </span>🤷‍♂️
-        </h1>
+      <div className="bg-zinc-200">
+        <div className="flex justify-between  max-w-full w-full items-center ">
+          <h1 className=" bg-whit text-3xl md:text-5xl font-semibold px-6 py-7 md:py-12 chooseUs">
+            <p className="text-sm font-thin text-orange-600">- Tasty & Fresh</p>
+            Our <span className="text-orange-600">Spacial items </span>🤷‍♂️
+          </h1>
 
-        {/* <button
+          {/* <button
           type="submit"
           className="flex items-center bg-blue-500 text-white gap-1 mx-4 px-4 h-10 cursor-pointer font-semibold tracking-widest rounded-md hover:bg-blue-400 duration-300 hover:gap-2 hover:translate-x-3"
         >
@@ -54,15 +55,19 @@ const SpacialItems = () => {
             ></path>
           </svg>
         </button> */}
-      </div>
-      <div className=" bg-zinc-200 flex gap-4 justify-around flex-wrap">
-        {SpacialItemData.map((data, index) => (
-          <SpacialItemCard
-            key={index}
-            image={data.image}
-            itemName={data.itemName}
-          />
-        ))}
+        </div>
+        <div className=" bg-zinc-200 flex gap-4 justify-around flex-wrap">
+          {SpacialItemData.map((data, index) => (
+            <SpacialItemCard
+              key={index}
+              image={data.image}
+              itemName={data.itemName}
+            />
+          ))}
+        </div>
+        <button className="bg-black h-17 w-44 text-white rounded-full font-semibold hover:bg-gray-800 transition duration-300 ease-in-out flex items-center justify-center mx-auto mt-10 ">
+          View More
+        </button>
       </div>
     </>
   );

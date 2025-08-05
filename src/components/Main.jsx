@@ -9,11 +9,12 @@ import MakeOwnTest from "./MakeOwnTest";
 import CookLevelSlider from "./CookLevelSlider";
 import CustomBurgerImage from "./CustomBurgerImage";
 import Cafe from "./Cafe";
+import PizzaPage from "./PizzaPage";
 
 const Main = () => {
   return (
     <>
-      <main className=" relative max-w-full w-full min-h-screen">
+      <main className=" relative max-w-full w-full min-h-screen overflow-hidden">
         <div className="relative h-svh px-5 py-5 md:px-20 md:py-10">
           <div className="fixed top-32 left-0 right-0 z-10 px-5 md:left-20 md:right-20 max-w-md h-full leading-relaxed text-white space-y-4 transition-all duration-500 ease-in-out">
             <p className="text-4xl md:text-5xl font-semibold leading-14">
@@ -30,8 +31,8 @@ const Main = () => {
             </p>
 
             <form className="leading-relaxed py-5">
-              <label htmlFor="" className="text-3xl px-1 font-semibold booking">
-                Quick Booking Here{" "}
+              <label htmlFor="" className="text-3xl px-1 font-medium chooseUs">
+                Quick Booking Here...{" "}
               </label>
               <div className="flex gap-3 py-2">
                 <input
@@ -90,8 +91,9 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="relative z-20">
+        <div className="relative z-20 ">
           <Cafe />
+          <PizzaPage />
         </div>
       </main>
     </>
