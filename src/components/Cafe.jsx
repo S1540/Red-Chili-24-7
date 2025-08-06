@@ -1,5 +1,5 @@
 import React from "react";
-import Resaturent from "../assets/banner-cafe.png";
+import Resaturent from "../assets/Restaurent.jpg";
 import SpacialItemCard from "./SpacialItemCard";
 import CafeCard from "./CafeCard";
 import item1 from "../assets/cafe-1.png";

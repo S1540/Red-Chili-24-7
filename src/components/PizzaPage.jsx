@@ -25,7 +25,7 @@ const PizzaPage = () => {
       <img
         src={images[currentImage]}
         alt="Pizza Banner"
-        className={`order-2 max-w-4xl w-full h-full object-cover transform transition-all duration-500 ease-in-out
+        className={`order-2 max-w-4xl  w-full h-full object-cover transform transition-all duration-500 ease-in-out
         ${slide ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}
       />
 
