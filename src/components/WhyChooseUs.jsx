@@ -65,9 +65,15 @@ const SpacialItems = () => {
             />
           ))}
         </div>
-        <button className="bg-black h-17 w-44 text-white rounded-full font-semibold hover:bg-gray-800 transition duration-300 ease-in-out flex items-center justify-center mx-auto mt-10 ">
-          View More
-        </button>
+        <div className="flex justify-center items-center mt-10">
+          <a
+            href="#"
+            className="relative w-32 group inline-block py-4 px-6 text-center text-white hover:text-black bg-gray-800 font-semibold rounded-full overflow-hidden transition duration-200"
+          >
+            <div className="absolute top-0 right-full w-full h-full bg-yellow-400 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500" />
+            <span className="relative">View More</span>
+          </a>
+        </div>
       </div>
     </>
   );

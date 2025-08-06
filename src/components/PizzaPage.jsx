@@ -46,9 +46,13 @@ const PizzaPage = () => {
           </p>
         </div>
         <div>
-          <button className="bg-black h-17 w-44 rounded-full text-white font-semibold hover:bg-gray-800 transition duration-300 ease-in-out">
-            Get Pizza
-          </button>
+          <a
+            href="#"
+            className="relative group inline-block w-33 py-4 px-6 text-center text-white hover:text-black bg-gray-900 font-semibold rounded-full overflow-hidden transition duration-200"
+          >
+            <div className="absolute top-0 right-full w-full h-full bg-yellow-400 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500" />
+            <span className="relative">Get Pizza</span>
+          </a>
         </div>
       </div>
     </div>

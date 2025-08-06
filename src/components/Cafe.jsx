@@ -30,7 +30,7 @@ const SpacialItemData = [
 const Cafe = () => {
   return (
     <>
-      <div className="relative w-full h-full bg-zinc-200 py-5">
+      <div className="relative w-full h-full bg-zinc-200 pb-5">
         <img src={Resaturent} alt="" className="bg-fixed w-full " />
         <h1 className=" bg-whit text-3xl md:text-5xl font-semibold px-6 py-7 md:py-12 chooseUs">
           <p className="text-sm font-thin text-orange-600">
@@ -44,10 +44,15 @@ const Cafe = () => {
             <CafeCard key={index} image={data.image} title={data.itemName} />
           ))}
         </div>
-
-        <button className="bg-black h-17 w-44 text-white rounded-full font-semibold hover:bg-gray-800 transition duration-300 ease-in-out flex items-center justify-center mx-auto mt-10 mb-5">
-          View More
-        </button>
+        <div className="flex justify-center items-center mt-10">
+          <a
+            href="#"
+            className="relative w-32 group inline-block py-4 px-6 text-center text-white hover:text-black bg-gray-800 font-semibold rounded-full overflow-hidden transition duration-200"
+          >
+            <div className="absolute top-0 right-full w-full h-full bg-yellow-400 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500" />
+            <span className="relative">View More</span>
+          </a>
+        </div>
       </div>
     </>
   );

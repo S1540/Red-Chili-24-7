@@ -10,6 +10,8 @@ import CookLevelSlider from "./CookLevelSlider";
 import CustomBurgerImage from "./CustomBurgerImage";
 import Cafe from "./Cafe";
 import PizzaPage from "./PizzaPage";
+import SubscriptionCard from "./SubscriptionCard";
+import SubscriptionPage from "./SubscriptionPage";
 
 const Main = () => {
   return (
@@ -76,24 +78,28 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="relative z-20">
+        <div className="relative z-20 bg-zinc-200 w-full">
           <SpacialItems />
-        </div>
-
-        <div className=" relative z-20 flex flex-col md:flex-row max-w-full justify-between bg-zinc-200 px-10">
-          <div className="max-w-xl w-full">
-            <MakeOwnTest name="Burger" />
-            <CookLevelSlider />
-            <CookItemOwn />
+          {/* {Make own item page} */}
+          <div className="flex flex-col md:flex-row max-w-full justify-between px-10">
+            <div className="max-w-xl w-full">
+              <MakeOwnTest name="Burger" />
+              <CookLevelSlider />
+              <CookItemOwn />
+            </div>
+            <div className="max-w-3xl w-full hidden lg:block">
+              <CustomBurgerImage />
+            </div>
           </div>
-          <div className="max-w-3xl w-full hidden lg:block">
-            <CustomBurgerImage />
+          {/* {Cafe Page} */}
+          <div className="relative z-20 ">
+            <Cafe />
+            <PizzaPage />
           </div>
-        </div>
-
-        <div className="relative z-20 ">
-          <Cafe />
-          <PizzaPage />
+          {/* {subscription page} */}
+          <div className="relative z-20 max-w-full w-full pb-5">
+            <SubscriptionPage />
+          </div>
         </div>
       </main>
     </>
