@@ -2,9 +2,9 @@ import ChefParticles from "./ChefParticles";
 
 export default function MeetOurChef() {
   return (
-    <div className="relative  w-full h-screen bg-zinc-700 overflow-hidden">
+    <div className="relative  w-full h-[750px] bg-zinc-700">
       {/* Particles Background */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full flex items-center justify-center overflow-hidden">
         <ChefParticles />
       </div>
 

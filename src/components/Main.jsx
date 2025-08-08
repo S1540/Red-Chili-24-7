@@ -13,6 +13,7 @@ import PizzaPage from "./PizzaPage";
 import SubscriptionCard from "./SubscriptionCard";
 import SubscriptionPage from "./SubscriptionPage";
 import MeetOurChef from "./MeetOurChef";
+import ChefParticles from "./ChefParticles";
 
 const Main = () => {
   return (
