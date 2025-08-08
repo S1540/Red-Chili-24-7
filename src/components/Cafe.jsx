@@ -31,7 +31,7 @@ const Cafe = () => {
   return (
     <>
       <div className="relative w-full h-full bg-zinc-200 pb-5">
-        <img src={Resaturent} alt="" className="bg-fixed w-full " />
+        {/* <img src={Resaturent} alt="" className="bg-fixed w-full " /> */}
         <h1 className=" bg-whit text-3xl md:text-5xl font-semibold px-6 py-7 md:py-12 chooseUs">
           <p className="text-sm font-thin text-orange-600">
             - Sponsored by Zomato

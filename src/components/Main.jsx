@@ -12,6 +12,7 @@ import Cafe from "./Cafe";
 import PizzaPage from "./PizzaPage";
 import SubscriptionCard from "./SubscriptionCard";
 import SubscriptionPage from "./SubscriptionPage";
+import MeetOurChef from "./MeetOurChef";
 
 const Main = () => {
   return (
@@ -99,6 +100,10 @@ const Main = () => {
           {/* {subscription page} */}
           <div className="relative z-20 max-w-full w-full pb-5">
             <SubscriptionPage />
+          </div>
+
+          <div className="relative z-20 max-w-full w-full">
+            <MeetOurChef />
           </div>
         </div>
       </main>
