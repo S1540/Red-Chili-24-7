@@ -1,5 +1,4 @@
 import ChefCard from "./ChefCard";
-import ChefParticles from "./ChefParticles";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import chef1 from "../assets/chef-1.jpg";
 import chef2 from "../assets/chef-2.jpg";
@@ -63,11 +62,36 @@ function MeetOurChef() {
     <div className="relative w-full  bg-zinc-700 overflow-hidden">
       {/* Particles Background */}
       <div className="absolute inset-0 flex items-center justify-center">
-        {/* <ChefParticles /> */}
+        <svg
+          class="absolute inset-0 w-full h-full"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="2" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+
+            <pattern
+              id="glowingDots"
+              x="0"
+              y="0"
+              width="25"
+              height="25"
+              patternUnits="userSpaceOnUse"
+            >
+              <circle cx="3" cy="3" r="2" fill="#f97316" filter="url(#glow)" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#glowingDots)" />
+        </svg>
       </div>
 
-      <div className="relative z-10 py-5 text-white">
-        <h1 className="text-3xl md:text-5xl font-semibold chooseUs text-center">
+      <div className="relative z-10 py-5 text-white backdrop-blur-[3px] ">
+        <h1 className="text-3xl md:text-5xl font-semibold chooseUs text-center text-orange-500">
           Meet Our Chef
         </h1>
 
