@@ -1,8 +1,7 @@
 import React from "react";
 import { FaCrown } from "react-icons/fa";
-import chef1 from "../assets/chef-1.jpg";
 
-const ChefCard = () => {
+const ChefCard = ({ chefs }) => {
   return (
     <>
       <div className="flex justify-center text-center">
@@ -10,7 +9,7 @@ const ChefCard = () => {
           <span>
             <FaCrown size={60} color="gold" className="mx-auto" />{" "}
           </span>
-          <h1 className="text-3xl font-bold">Non-Veg Specialist</h1>
+          <h1 className="text-3xl font-bold">{chefs.specialist}</h1>
           <p className="md:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
             suscipit, quo, quis eos obcaecati voluptatem similique iste hic
@@ -21,13 +20,13 @@ const ChefCard = () => {
 
           <div className="flex flex-col items-center mt-8">
             <img
-              src={chef1}
+              src={chefs.image}
               alt="cheaf Image"
               className="w-32 h-32 rounded-full object-cover mx-auto "
             />
-            <p className="font-semibold text-lg">John Doe </p>
-            <p className="text-sm text-orange-500 font-medium">( Head Chef )</p>
-            <p className="text-amber-300"> 10+ Years of Experience.</p>
+            <p className="font-semibold text-lg">{chefs.name} </p>
+            <p className="text-sm text-orange-500 font-medium">{chefs.level}</p>
+            <p className="text-amber-300">{chefs.experience}</p>
           </div>
         </div>
       </div>
