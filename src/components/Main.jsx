@@ -13,6 +13,7 @@ import PizzaPage from "./PizzaPage";
 import SubscriptionCard from "./SubscriptionCard";
 import SubscriptionPage from "./SubscriptionPage";
 import MeetOurChef from "./MeetOurChef";
+import Footer from "./Footer";
 
 const Main = () => {
   return (
@@ -93,18 +94,19 @@ const Main = () => {
             </div>
           </div>
           {/* {Cafe Page} */}
-          <div className="relative z-20 ">
+          <div className="">
             <Cafe />
             <PizzaPage />
           </div>
           {/* {subscription page} */}
-          <div className="relative z-20 max-w-full w-full pb-5">
+          <div className="max-w-full w-full pb-5">
             <SubscriptionPage />
           </div>
 
-          <div className="relative z-20 max-w-full w-full">
+          <div className="max-w-full w-full">
             <MeetOurChef />
           </div>
+          <Footer />
         </div>
       </main>
     </>
