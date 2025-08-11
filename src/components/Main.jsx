@@ -94,7 +94,7 @@ const Main = () => {
             </div>
           </div>
           {/* {Cafe Page} */}
-          <div className="">
+          <div className="space-y-10">
             <Cafe />
             <PizzaPage />
           </div>
