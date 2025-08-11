@@ -6,12 +6,12 @@ const Footer = () => {
   return (
     <>
       <footer className=" bg-zinc-700 text-gray-200 max-w-full w-full h-auto px-10 py-10">
-        <div className=" max-w-3xl w-full opacity-30  mx-auto">
+        <div className=" max-w-3xl w-full opacity-30 mx-auto pb-10">
           <img src={footerPng} alt="" />
         </div>
 
-        <div className="flex flex-col md:flex-row justify-around md:items-center gap-5">
-          <div className=" max-w-lg w-full font-[Inter] ">
+        <div className="flex flex-col md:flex-row justify-around md:items-center md:gap-6">
+          <div className=" max-w-lg w-full ">
             <img src={redChili} className="w-44 object-cover pb-4" />
             <p>
               One is to focus on the quality of your meat. If you can call out
@@ -29,7 +29,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className=" font-[Inter] py-5  flex flex-col gap-4 text-gray-400">
+          <div className="py-5 flex flex-col gap-2 text-gray-400">
             <h1 className="font-semibold text-white text-xl">Our Service</h1>
             <a
               className="hover:text-orange-500 transition-all duration-300 ease-in-out hover:-translate-y-1"
@@ -63,7 +63,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="font-[Inter] py-5  flex flex-col text-gray-400 gap-4">
+          <div className="py-5 flex flex-col text-gray-400 gap-2">
             <h1 className="font-semibold text-white text-xl">Contact Media</h1>
             <a
               className="hover:text-orange-500 transition-all duration-300 ease-in-out hover:-translate-y-1"
@@ -98,8 +98,8 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <div className="text-center py-3 text-lg  mx-auto">
-          <p> Copyright 2023 © Theme Created By React All Rights Reserved </p>
+        <div className="text-center pt-3 text-lg  mx-auto">
+          <p> Copyright 2025 © Theme Created By React All Rights Reserved </p>
         </div>
       </footer>
     </>
